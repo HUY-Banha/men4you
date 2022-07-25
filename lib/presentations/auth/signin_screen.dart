@@ -2,8 +2,8 @@ import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:men4you/bloc/bloc_auth/auth_bloc.dart';
+import 'package:men4you/presentations/account_screen/account_screen.dart';
 import 'package:men4you/presentations/auth/signup_screen.dart';
-import 'package:men4you/presentations/home_screen/account_screen.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({Key? key}) : super(key: key);

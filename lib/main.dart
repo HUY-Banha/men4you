@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:men4you/bloc/bloc_auth/auth_bloc.dart';
 import 'package:men4you/data/repositories/auth_repository.dart';
+import 'package:men4you/presentations/account_screen/account_screen.dart';
 import 'package:men4you/presentations/auth/signin_screen.dart';
-import 'package:men4you/presentations/home_screen/account_screen.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
