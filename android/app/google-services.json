@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "851413253321",
+    "project_id": "men4you-praticum",
+    "storage_bucket": "men4you-praticum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851413253321:android:490a3987b1ab33e881e118",
+        "android_client_info": {
+          "package_name": "com.example.men4you"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851413253321-6o8atb0d8m6farv816su755a3pafv0dt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Y7N6xE13v5E7PQZ41KqOPA-nU6TLO1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851413253321-6o8atb0d8m6farv816su755a3pafv0dt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
