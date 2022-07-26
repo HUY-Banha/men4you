@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:men4you/bloc/bloc_auth/auth_bloc.dart';
 import 'package:men4you/presentations/auth/signin_screen.dart';
+import 'package:men4you/widget/nav_bar.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({Key? key}) : super(key: key);
@@ -15,10 +16,10 @@ class AccountScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Dashboard'),
       ),
+      bottomNavigationBar: BottomNavBar(currentIdex: 3),
       body: BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
           if (state is UnAuthenticated) {
-            // Navigate to the sign in screen when the user Signs Out
             Navigator.of(context).pushAndRemoveUntil(
               MaterialPageRoute(builder: (context) => SignInScreen()),
               (route) => false,
