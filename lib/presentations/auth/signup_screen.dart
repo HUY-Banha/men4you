@@ -36,7 +36,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             // Navigating to the dashboard screen if the user is authenticated
             Navigator.of(context).pushReplacement(
               MaterialPageRoute(
-                builder: (context) => const AccountScreen(),
+                builder: (context) => AccountScreen(),
               ),
             );
           }

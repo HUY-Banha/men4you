@@ -1,6 +1,7 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:men4you/presentations/account_screen/account_screen.dart';
 import 'package:men4you/presentations/cart_screen/cart_screen.dart';
 import 'package:men4you/presentations/category/category_screen.dart';
@@ -19,16 +20,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
   Widget build(BuildContext context) {
     return ConvexAppBar(
         initialActiveIndex: widget.currentIdex,
-        activeColor: Colors.white,
-        backgroundColor: Colors.blue[200],
-        color: Colors.black45,
         elevation: 0,
         curveSize: 100,
-        items: const [
-          TabItem(icon: Icons.explore_outlined, title: 'Home'),
-          TabItem(icon: Icons.favorite_border, title: 'Cart'),
-          TabItem(icon: Icons.category, title: 'Categories'),
-          TabItem(icon: Icons.perm_identity_outlined, title: 'Account'),
+        items: [
+          TabItem(icon: Icons.explore_outlined, title: 'home'.tr),
+          TabItem(icon: Icons.favorite_border, title: 'cart'.tr),
+          TabItem(icon: Icons.category, title: 'category'.tr),
+          TabItem(icon: Icons.perm_identity_outlined, title: 'account'.tr),
         ],
         onTap: (int index) {
           if (index == 0) {
@@ -68,7 +66,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
               context,
               PageRouteBuilder(
                 pageBuilder: (context, animation1, animation2) =>
-                    const AccountScreen(),
+                    AccountScreen(),
                 transitionDuration: Duration.zero,
                 reverseTransitionDuration: Duration.zero,
               ),

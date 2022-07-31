@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:men4you/data/repositories/home_repository.dart';
+import 'package:men4you/data/models/thumnail_model.dart';
 
 class ThumnailWidget extends StatelessWidget {
   const ThumnailWidget({
